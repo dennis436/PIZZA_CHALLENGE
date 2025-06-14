@@ -7,5 +7,5 @@ class Restaurant(db.model):
     address = db.column(db.string,nullable=False)
 
     restaurant_pizzas = db.realationship('RestaurantPizzas', back_populates='restaurant', cascade='all,delete-orphan')
-     def __repr__(self):
-    return f'<Restaurant {self.name}>'
+    def __repr__(self):
+     return f'<Restaurant {self.name}>'
